@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *_strchr - Entry point
+ *_strchr - function that locates character in string
  * @s: the string
  * @c: character to be located
- * Return - Always 0 (Success)
+ * Return: - Always 0 (Success)
  */
 
 char *_strchr(char *s, char c)
