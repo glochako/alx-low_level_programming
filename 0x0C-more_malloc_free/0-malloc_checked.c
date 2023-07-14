@@ -7,10 +7,10 @@
  * Return: pointer to the allocated memory
  */
 
-void *malloc_char(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	void *ptr;
-	
+
 	ptr = malloc(b);
 
 	if (ptr == NULL)
