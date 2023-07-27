@@ -12,7 +12,7 @@
 size_t print_list(const list_t *h)
 {
 	const list_t *curr = h;
-	size_t s = 0;
+	size_t nodes = 0;
 
 	if (!h)
 		return (0);
@@ -24,7 +24,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[0] (nil)\n");
 		curr = curr->next;
-		s++;
+		nodes++;
 	}
-	return (s);
+	return (nodes);
 }
