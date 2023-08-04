@@ -3,7 +3,7 @@
 /**
  * _atoi - function declaration
  * @s: string pointer
- * Return: integer equivalen of string
+ * Return: integer equivalent of string
  */
 
 int _atoi(char *s);
