@@ -15,24 +15,35 @@ char *str_concat(char *s1, char *s2)
 	char *new_string;
 	int i;
 	int c;
-	int len = 0;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s1[i] || s2[i]; i++)
-		len++;
+	
+	i = c = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[c] != '\0')
+		c++;
 
-	new_string = malloc(sizeof(char) * len);
+	new_string = malloc(sizeof(char) * (i + c + 1));
 
 	if (new_string == NULL)
 		return (NULL);
 
-	for (i = 0; s1[i]; i++)
-		new_string[c++] = s1[i];
-	for (i = 0; s2[i]; i++)
-		new_string[c++] = s2[i];
-
+	i = c = 0;
+	while (s1[i] != '\0')
+	{
+		new_string[i] = s1[i];
+		i++;
+	}
+	while (s2[c] != '\0')
+	{
+		new_string[i] = s2[c];
+		i++;
+		c++;
+	}
+	new_string[i] = '\0';
 	return (new_string);
 }
