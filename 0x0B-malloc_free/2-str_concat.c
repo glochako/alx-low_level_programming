@@ -7,7 +7,7 @@
  * @s1: first string
  * @s2: second string
  * Return: pointer to space in memory with new contents
- * Return: new string (Success), or NULL (Error)
+ * or NULL (Error)
  */
 
 char *str_concat(char *s1, char *s2)
@@ -20,7 +20,6 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	
 	i = c = 0;
 	while (s1[i] != '\0')
 		i++;
