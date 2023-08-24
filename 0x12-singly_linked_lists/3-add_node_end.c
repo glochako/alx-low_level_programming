@@ -10,12 +10,6 @@ add_node_end -adds new node at the end of a list_t list
 Return: address of the new element
 */
 
-tpedef struct list_s
-{
-    char *str;
-    struct list_s *next;
-} list_t;
-
 list_t *add_node_end(list_t **head, const char *str)
 {
     list_t *new;
