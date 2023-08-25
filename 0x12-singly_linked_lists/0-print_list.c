@@ -9,14 +9,14 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t node_count = 0;/* the node count starts at 0*/
+	size_t node_count = 0;
 
-	while (h) /* iterates through the loop as long as h is not NULL*/
+	while (h)
 	{
-		if (!h->str)/* would mean that the string is empty*/
+		if (!h->str)
 			printf("[0] (nil)\n");
 		else
-			printf("[%u] %s\n", h->len, h->str);/*prints the length of the string*/
+			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
 		node_count++;
 	}
