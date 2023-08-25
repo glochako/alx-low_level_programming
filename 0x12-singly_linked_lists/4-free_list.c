@@ -3,7 +3,20 @@
 #include <stdio.h>
 #include "lists.h"
 
-list_t *add_node_end(list_t **head, const char *str)
+/**
+ * free_list - frees a linked list
+ * @head: node that points to the list
+ */
+
+void free_list(list_t *head)
 {
-    
+	list_t *temporary;
+
+	while (head)
+	{
+		temporary = head->next;
+		free(head->str);
+		free(head);
+		head = temporary;
+	}
 }
