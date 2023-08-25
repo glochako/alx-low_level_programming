@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
         if (h->str == NULL)/* would mean that the string is empty*/
         printf("[0](nil)\n");
         else
-        printf("[%lu] %s\n", h->len, h->str);/*prints the length of the string and the content*/
+        printf("[%d] %s\n", h->len, h->str);/*prints the length of the string and the content*/
 
         h = h->next;
         h++;
