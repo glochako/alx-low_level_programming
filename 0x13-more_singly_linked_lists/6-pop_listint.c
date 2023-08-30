@@ -3,6 +3,7 @@
 /**
  * pop_listint - deletes the head node of a listint_t list
  * @head: pointer to the first node of the list
+ * Return: head node (n), 0 if list is empty
  */
 
 int pop_listint(listint_t **head)
