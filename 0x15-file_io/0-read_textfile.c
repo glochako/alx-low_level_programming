@@ -6,7 +6,7 @@
  *  @filename: the file
  *  @letters: the number of letters it should read and print
  *  Return: number of letters, or 0 if filename cannot be opened
- *  	0 if filename is NULL
+ *  0 if filename is NULL
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
