@@ -11,9 +11,9 @@ int create_file(const char *filename, char *text_content)
 {
 	int fp, wr, len = 0;
 
-	if (filename == NULL || text_content == NULL)
+	if (filename == NULL)
 		return (-1);
-	else
+	if (text_content != NULL)
 	{
 		for (len = 0; text_content[len];)
 			len++;
